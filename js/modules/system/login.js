@@ -95,7 +95,7 @@
 					'html/users/pagos.html',
 					'html/system/instrucciones.html',
 					'html/system/TerminosCondiciones.html',
-                                         'html/system/Instalaciones/Entrenamiento.html',
+                    'html/system/Instalaciones/Entrenamiento.html',
 					'html/system/Instalaciones/PastoS.html',
 					'html/system/Instalaciones/PastoS.html',
 					'html/system/Instalaciones/TribunaL.html',
@@ -115,7 +115,8 @@
 					'html/system/Instalaciones/EFYJ.html',
 					'html/system/Instalaciones/CanchaB.html',
 					'html/system/Instalaciones/BanosV.html',
-					'html/system/Instalaciones/Vestidores.html'
+					'html/system/Instalaciones/Vestidores.html',
+					'html/system/Jugadores/perfil.html'
 
 				];
 				//Get all the files to the templateCache
