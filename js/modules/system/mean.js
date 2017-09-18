@@ -14,132 +14,43 @@
 	})
 	//defining controller
 	.controller('meanController', function($route,$window,$scope,$location,$anchorScroll,$http,$mdDialog, $interval){
-		
-		//GoTo sections for page---------------------------------------------------------------
-		$scope.gotoTop = function() {
-			$scope.showTeam=false;
-			$scope.showContact=false;
-			$scope.showAbout=false;
-			$scope.showFacilities=false;
-			$scope.showPrivacy=false;
-			$scope.showCategories=false;
-			$scope.showGallery=false;
-                        $scope.showEvent=false;
-			$location.hash('top');
-			$anchorScroll();
-		};
-
-		$scope.showAbout=false;
-		$scope.gotoAbout = function() {
-			$scope.showTeam=false;
-			$scope.showContact=false;
-			$scope.showFacilities=false;
-			$scope.showPrivacy=false;
-			$scope.showCategories=false;
-			$scope.showGallery=false;
-                        $scope.showEvent=false;
-			$scope.showAbout=true;
-			$location.hash('about');
-			$anchorScroll();
-		};
-		$scope.showGallery=false;
-		$scope.gotoGallery = function() {
-			$scope.showTeam=false;
-			$scope.showContact=false;
-			$scope.showFacilities=false;
-			$scope.showPrivacy=false;
-			$scope.showCategories=false;
-			$scope.showAbout=false;
-			$scope.showGallery=true;
-                       $scope.showEvent=false;
-			$location.hash('gallery');
-			$anchorScroll();
-		};
-               $scope.showEvent=false;
-		$scope.gotoEvent = function() {
-			$scope.showAbout=false;
-			$scope.showCategories=false;
-			$scope.showTeam=false;
-			$scope.showFacilities=false;
-			$scope.showPrivacy=false;
-			$scope.showGallery=false;
-			$scope.showContact=false;
-			$scope.showEvent=true;
-			$location.hash('event');
-			$anchorScroll();
-		};
-
-		$scope.showFacilities=false;
-		$scope.gotoFacilities = function() {
-			$scope.showAbout=false;
-			$scope.showContact=false;
-			$scope.showPrivacy=false;
-			$scope.showCategories=false;
-			$scope.showTeam=false;
-			$scope.showGallery=false;
-                        $scope.showEvent=false;
-			$scope.showFacilities=true;
-			$location.hash('facilities');
-			$anchorScroll();
-		};
-		$scope.showPrivacy=false;
-		$scope.gotoNoticePrivacy = function() {
-			$scope.showAbout=false;
-			$scope.showContact=false;
-			$scope.showCategories=false;
-			$scope.showTeam=false;
-			$scope.showFacilities=false;
-			$scope.showGallery=false;
-                        $scope.showEvent=false;
-			$scope.showPrivacy=true;
-			$location.hash('noticeprivacy');
-			$anchorScroll();
-		};
-
-		$scope.showTeam=false;
-		$scope.gotoTeam = function() {
-			$scope.showAbout=false;
-			$scope.showContact=false;
-			$scope.showCategories=false;
-			$scope.showFacilities=false;
-			$scope.showPrivacy=false;
-			$scope.showGallery=false;
-                        $scope.showEvent=false;
-			$scope.showTeam=true;
-			$location.hash('team');
-			$anchorScroll();
-		};
-		$scope.showContact=false;
-		$scope.gotoContact = function() {
-			$scope.showAbout=false;
-			$scope.showCategories=false;
-			$scope.showTeam=false;
-			$scope.showFacilities=false;
-			$scope.showPrivacy=false;
-			$scope.showGallery=false;
-                        $scope.showEvent=false;
-			$scope.showContact=true;
-			$location.hash('contact');
-			$anchorScroll();
-		};
-		
-		$scope.showCategories=false;
-		$scope.gotoCategory=function(){
-			$scope.showAbout=false;
-			$scope.showContact=false;
-			$scope.showTeam=false;
-			$scope.showFacilities=false;
-			$scope.showPrivacy=false;
-			$scope.showGallery=false;
-                        $scope.showEvent=false;
-			$scope.showCategories=true;
-			$location.hash('categories');
-			$anchorScroll();
+		//definiendo liga de login
+		$scope.login = function(){
+			$location.path('/login/');	
+			
 		}
-		/********************Menu Inside Categories****************************/
+		$scope.gotoAbout = function(){
+			$location.path('/about/');
+			$window.scrollTo(0,0);
+		}
+		$scope.gotoEvent = function(){
+			$location.path('/event/');
+			$window.scrollTo(0,0);
+		}
+		$scope.gotoTop = function(){
+			$location.path('/');
+		}
+		$scope.gotoNoticePrivacy = function() {
+			$location.path('/privacy/');	
+			$window.scrollTo(0,0);
+		}
+		$scope.gotoContact = function() {
+			$location.path('/contact/');
+			$window.scrollTo(0,0);
+		}
+		$scope.gotoCategory=function(){
+			$location.path('/categories/');
+			$window.scrollTo(0,0);
+		}
+		$scope.gotoFacilities=function(){
+			$location.path('/facilities/');
+			$window.scrollTo(0,0);
+		}
+		
+		/********************Submenu Inside Categories****************************/
 
 		/*BABY*/
-		$scope.gotoArdillas=function(){
+		/*$scope.gotoArdillas=function(){
 			$scope.showSpringFemale=false;
 			$scope.showAutumnFemale=false;
 			$scope.showSpringFemale2=false;
@@ -202,7 +113,7 @@
 			$location.hash('categories/Zorros');
 			$anchorScroll();
 		}
-		/*CHILDISH*/
+		/*CHILDISH*
 		$scope.gotoRabbits=function(){
 			$scope.showArdillas=false;
 			$scope.showCastores=false;
@@ -331,7 +242,7 @@
 		}
 
 
-		/*YOUTH*/
+		/*YOUTH*
 		$scope.gotoSpringY=function(){
 			$scope.showArdillas=false;
 			$scope.showCastores=false;
@@ -374,7 +285,7 @@
 			$location.hash('categories/Primavera-Juvenil');
 			$anchorScroll();
 		}
-		/*FEMALE*/
+		/*FEMALE*
 		$scope.gotoSpringF=function(){
 			$scope.showArdillas=false;
 			$scope.showCastores=false;
@@ -437,14 +348,14 @@
 			$scope.showSpringFemale2=true;
 			$location.hash('categories/Primavera-Femenino2');
 			$anchorScroll();
-		}
+		}*/
 
 		//---------------------------------------------------------------------------------------------	
 
 		/*GALLERY*/
  		// Set of Photos--------------------------------------------------------------------------------
 		$scope.photos = [
-			{src: 'images/evento1.jpg', desc: 'Image 01'},
+			{src: 'images/eventos/evento1.jpg', desc: 'Image 01'},
 			{src: 'images/Entrenamiento 1.jpg', desc: 'Image 02'},
 			{src: 'images/Entrenamiento 2.jpg', desc: 'Image 03'},
 			{src: 'images/Entrenamiento 3.jpg', desc: 'Image 04'},
@@ -612,6 +523,10 @@
         	}*/
     	}//---------------------------------------------------------------------
 
+    	/**********************************************************************************************/
+    	/*										FACILITIES 											  */
+    	/*																							  */
+    	/**********************************************************************************************/
 
       	/*-------------------------------INSTRUCCIONES------------------------------------------------*/
 
@@ -1104,9 +1019,9 @@
       			$mdDialog.hide(answer);
     		};
    		}
-   	/*-------------------------------------------------------------------------------------------*/
+   	/*----------------------------End of Facilities-----------------------------------------------------------*/
 
-      /*---------------------------------TERMINOS Y CONDICIONES----------------------------------*/
+    /*---------------------------------TERMINOS Y CONDICIONES----------------------------------*/
     	$scope.showAdvanced = function(ev) {
     		$mdDialog.show({
       			controller: DialogController,
@@ -1126,7 +1041,6 @@
       			$mdDialog.hide(answer);
     		};
    		}
-
 
 		/*--------------ADDRESS SECTION---------------------------------------------------*/
     	getEstado($http,$scope);
