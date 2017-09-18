@@ -22,6 +22,7 @@
 		'mapModule',
 		'categoryModule',
 		'aboutModule'
+		//'profileModule'
 		])
 	//Configurate the app
 	.config(function($httpProvider, $routeProvider, $mdThemingProvider, $provide){
@@ -71,6 +72,9 @@
 		})
 		.when('/payment/',{
 			template:'<payment-directive></payment-directive>'
+		})
+		.when('/profile/',{
+			template:'<profile-directive></profile-directive>'
 		})
 		.otherwise({
 			template: '<dashboard-directive></dashboard-directive>'
