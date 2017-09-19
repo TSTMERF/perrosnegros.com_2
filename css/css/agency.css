@@ -995,7 +995,7 @@ body {
 }
 
 .slogan img {
-    position: relative;
+    position: relative; 
     height: 30px;
     margin-right: 130px;
     width: 30px;
@@ -1312,10 +1312,11 @@ body {
       height: 250px;
       width: 440px;
     }
-    .carousel-indicators{
+     .carousel-indicators
+    {
       width: 5%;
       top:-15%;
-      left:77.5%;
+      left:55.5%;
       position: absolute;
       white-space: nowrap;
     }
@@ -1534,6 +1535,7 @@ body {
 .entre.carousel-control {
     width: 0;
 }
+
 .entre.carousel-control.left,
 .entre.carousel-control.right {
     opacity: 1;
@@ -1550,7 +1552,6 @@ body {
 .entre.carousel-control.right span {
     padding:.2px;
 }
-
 .entre.carousel-control .glyphicon-chevron-left, 
 .entre.carousel-control .glyphicon-chevron-right, 
 .entre.carousel-control .icon-prev, 
