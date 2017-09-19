@@ -25,7 +25,8 @@
 		'eventModule',
 		'privacyModule',
 		'contactModule',
-		'facilitiesModule'
+		'facilitiesModule',
+		'signInModule'
 		//'profileModule'
 		])
 	//Configurate the app
@@ -54,6 +55,9 @@
 		})
 		.when('/login/',{
 			template:'<login-directive></login-directive>'
+		})
+		.when('/signIn/',{
+			template:'<sign-In-directive></sign-In-directive>'
 		})
 		.when('/about/',{
 			template:'<about-directive></about-directive>'

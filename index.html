@@ -26,8 +26,7 @@
 	    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 	</head>
 	<body layout="column">
-		<loading-directive layout="row" flex></loading-directive>
-
+		<ng-view></ng-view>
 		<div>
 			<!--leaflet(MAPS)-->
 			<script type="text/javascript" src="js/libraries/leaflet.js"></script>
@@ -54,6 +53,7 @@
 			<script type="text/javascript" src="https://code.angularjs.org/1.4.8/angular-sanitize.min.js"></script>
 			<!--https://code.angularjs.org/1.4.8/angular-touch.js-->
 			<script type="text/javascript" src="https://code.angularjs.org/1.4.8/angular-touch.js"></script>
+			
 			<!--http://code.jquery.com/jquery-2.1.4.min.js
 			<script type="text/javascript" src="js/libraries/jquery-2.1.4.min.js"></script>-->
 			<script type="text/javascript" src="js/libraries/filters.js"></script>
@@ -71,12 +71,14 @@
 			<script type="text/javascript" src="js/modules/system/privacy.js"></script>
 			<script type="text/javascript" src="js/modules/system/contact.js"></script>
 			<script type="text/javascript" src="js/modules/system/facilities.js"></script>
+			<script type="text/javascript" src="js/modules/system/signIn.js"></script>
 			<!--USERS-->
 			<script type="text/javascript" src="js/modules/users/personal.js"></script>
 			<script type="text/javascript" src="js/modules/users/parents.js"></script>
 			<script type="text/javascript" src="js/modules/users/medico.js"></script>
 			<script type="text/javascript" src="js/modules/users/training.js"></script>
 			<script type="text/javascript" src="js/modules/users/pagos.js"></script>
+
 <script>
 var myVar;
 

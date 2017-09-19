@@ -1273,7 +1273,7 @@ body {
       height: 170px;
       width: 320px;
     }
-     .carousel-indicators
+     .indi.carousel-indicators
     {
       width: 5%;
       top:-15%;
@@ -1293,7 +1293,8 @@ body {
       height: 190px;
       width: 360px;
     }
-     .carousel-indicators
+     .indi.carousel-indicators
+
     {
       width: 5%;
       top:-15%;
@@ -1312,7 +1313,7 @@ body {
       height: 250px;
       width: 440px;
     }
-     .carousel-indicators
+     .indi.carousel-indicators
     {
       width: 5%;
       top:-15%;
@@ -1331,7 +1332,7 @@ body {
       height: 300px;
       width: 500px;
     }
-    .carousel-indicators{
+    .indi.carousel-indicators{
       width: 5%;
       top:-15%;
       left:77.5%;
@@ -1350,7 +1351,7 @@ body {
       height: 270px;
       width: 540px;
     }
-     .carousel-indicators
+     .indi.carousel-indicators
     {
       width: 5%;
       top: -15%;
@@ -1369,7 +1370,7 @@ body {
       height: 300px;
       width: 580px;
     }
-     .carousel-indicators
+    .indi.carousel-indicators
     {
       width: 5%;
       top: -7%;
@@ -1388,7 +1389,7 @@ body {
       height: 300px;
       width: 600px;
     }
-     .carousel-indicators
+    .indi.carousel-indicators
     {
       width: 5%;
       top: -9%;
@@ -1408,7 +1409,7 @@ body {
         width: 610px;
         
     }
-     .carousel-indicators
+    .indi.carousel-indicators
     {
       width: 5%;
       top: -12%;
@@ -1429,7 +1430,7 @@ body {
       height: 450px;
       width: 850px;
     }
-     .carousel-indicators
+    .indi.carousel-indicators
     {
       width: 5%;
       top: -6%;
@@ -1450,7 +1451,7 @@ body {
       height: 400px;
       width: 720px;
     }
-     .carousel-indicators
+    .indi.carousel-indicators
     {
       width: 5%;
       top: -6%;
