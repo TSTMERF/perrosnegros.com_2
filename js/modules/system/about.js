@@ -8,11 +8,11 @@
 		return{
 			restrict:'E',
 			replace:true,
-			templateUrl:'html/system/home.html',
+			templateUrl:'html/system/about.html',
 			controller: 'aboutController'
 		};
 	})
-	.controller('aboutController', function($mdDialog){
+	.controller('aboutController', function($mdDialog,$scope){
 		this.missionAction = function(ev) {
       		$mdDialog.show($mdDialog.alert()
         		.title('Misión')
@@ -36,6 +36,27 @@
         		.ok('Ok')
         		.targetEvent(ev)
     		);
-    	}; 
+    	};
+         /*Directiva*/
+        $scope.directiveAction = function(ev) {
+        $mdDialog.show({
+            controller: DialogController,
+            templateUrl: 'html/system/directiva.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose:true
+        })
+        .then(function(answer) {
+            $scope.status = 'You said the information was "' + answer + '".';
+          }, function() {
+              $scope.status = 'You cancelled the dialog.';
+          });
+        };
+
+        function DialogController($scope, $mdDialog) {
+        $scope.answer = function(answer) {
+            $mdDialog.hide(answer);
+        };
+      } 
 	});
 })();

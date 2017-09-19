@@ -21,7 +21,11 @@
 		'paymentModule',
 		'mapModule',
 		'categoryModule',
-		'aboutModule'
+		'aboutModule',
+		'eventModule',
+		'privacyModule',
+		'contactModule',
+		'facilitiesModule'
 		//'profileModule'
 		])
 	//Configurate the app
@@ -42,19 +46,32 @@
 		//Define the routes
 		$routeProvider
 		//Dashboard's module routes
-		.when('/mean/',{
+		.when('/',{
 			template:'<mean-directive></mean-directive>'
 		})
-		.when('/dashboard/', {
-			template: '<dashboard-directive></dashboard-directive>'
-		})
-		.when('error/permission/',{
+		.when('/error/permission/',{
 			template: '<error-directive></error-directive>'
 		})
 		.when('/login/',{
 			template:'<login-directive></login-directive>'
-			//templateUrl:"html/system/login.html",
-			//controller:
+		})
+		.when('/about/',{
+			template:'<about-directive></about-directive>'
+		})
+		.when('/event/',{
+			template:'<event-directive></event-directive>'
+		})
+		.when('/privacy/',{
+			template:'<privacy-directive></privacy-directive>'
+		})
+		.when('/contact/',{
+			template:'<contact-directive></contact-directive>'
+		})
+		.when('/categories/',{
+			template:'<category-directive></category-directive>'
+		})
+		.when('/facilities/',{
+			template:'<facilities-directive></facilities-directive>'
 		})
 		//**************USERS******************
 		
@@ -73,9 +90,9 @@
 		.when('/payment/',{
 			template:'<payment-directive></payment-directive>'
 		})
-		.when('/profile/',{
+		/*.when('/profile/',{
 			template:'<profile-directive></profile-directive>'
-		})
+		})*/
 		.otherwise({
 			template: '<dashboard-directive></dashboard-directive>'
 		});
