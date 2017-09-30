@@ -8,7 +8,7 @@
 		return{
 			restrict:'E',
 			replace:true,
-			templateUrl:'html/system/EstamosTrabajando.html',
+			templateUrl:'html/system/category.html',
 			controller: 'categoryController'
 		};
 	})
@@ -17,6 +17,96 @@
     $mdIconProvider
     //.defaultIconSet('img/icons/sets/core-icons.svg', 24);
 	})
+  /***********CONTROLLERS**********/
+  .controller('categoryController', function ($log, $scope, $timeout,$mdSidenav) {
+    //buttons for every category
+    $scope.toggleLeft =buildDelayedToggler('left');
+    $scope.Ardillas =buildToggler('ardillas');
+    $scope.Castores =buildToggler('castores');
+    $scope.Zorros  =buildToggler('zorros');
+    $scope.Rabbits =buildToggler('rabbits');
+    $scope.Hornets =buildToggler('hornets');
+    $scope.Irons =buildToggler('irons');
+    $scope.Falcons =buildToggler('falcons');
+    $scope.Tauros =buildToggler('tauros');
+    $scope.Ponys =buildToggler('ponys');
+    $scope.Primavera =buildToggler('primavera');
+    $scope.Otono =buildToggler('otono');
+    $scope.Kids =buildToggler('kids');
+    $scope.Rockies =buildToggler('rockies');
+    $scope.Junior =buildToggler('junior');
+    // checking out if right is open.
+    $scope.isOpenRight =function(){
+      return 
+        $mdSidenav('ardillas').isOpen();
+        //$mdSidenav('castores').isOpen();
+    };
+    /* keeps open the  left sidenav */
+    function rebote (func, wait, context){
+        var time;
+        return function rebotado(){
+          var context=$scope,
+            args=Array.prototype.slice.call(arguments);
+          $timeout.cancel(time);
+          time=$timeout(function(){
+            time=undefined;
+            func.apply(context, args);
+          }, wait || 10 );
+        };
+    }
+    // built the left sidenav as toggle
+    function buildDelayedToggler (navID){
+      return rebote(function(){
+        $mdSidenav(navID)
+        .toggle()
+        .then(function(){
+          $log.debug("toggle"+navID+"is done");
+        });
+      },200);
+    }
+    //built the right sidenav as toggle
+    function buildToggler(navID){
+       return function() {
+        $mdSidenav(navID)
+        .toggle()
+        .then(function(){
+          $log.debug("toggle"+navID+"is done");
+        });
+       };
+    }
+  })
+  //defining the left controller sidenav
+  .controller('LeftCtrl', function($scope,$timeout,$mdSidenav,$log){
+    $scope.close=function(){
+      $mdSidenav('left').close()
+      .then(function(){
+        $log.debug('close LEFT is done');
+      });
+    };
+  })
+  //defining the right controller sidenav
+  .controller('RightCtrl', function($scope,$timeout,$mdSidenav,$log){
+    $scope.close=function(){
+      $mdSidenav('ardillas').close()
+      $mdSidenav('castores').close()
+      $mdSidenav('zorros').close()
+      $mdSidenav('rabbits').close()
+      $mdSidenav('hornets').close()
+      $mdSidenav('irons').close()
+      $mdSidenav('falcons').close()
+      $mdSidenav('tauros').close()
+      $mdSidenav('ponys').close()
+      $mdSidenav('primavera').close()
+      $mdSidenav('otono').close()
+      $mdSidenav('kids').close()
+      $mdSidenav('rockies').close()
+      $mdSidenav('junior').close()
+      .then(function(){
+        $log.debug('close ardillas is done');
+      });
+    };
+  });
+})();
 /********************filtra las combinaciones rápidas del teclado*************************/
   	/*.filter('keyboardShortcut', function($window) {
   	  return function(str) {
@@ -37,10 +127,9 @@
       }).join(seperator);
       };
     })*/
-  	.controller('categoryController', function DemoCtrl($mdDialog, $scope, $location) {
       /********************Submenu Inside Categories****************************/
 
-    /*BABY*/
+    /*BABY*
     $scope.gotoArdillas=function(){
       $location.path('/Ardillas/');
     }
@@ -50,7 +139,7 @@
     $scope.gotoZorros=function(){
       $location.path('/Zorros/');
     }
-    /*CHILDISH*/
+    /*CHILDISH*
     $scope.gotoRabbits=function(){
       $location.path('/Rabbits/');
     }
@@ -69,14 +158,14 @@
     $scope.gotoPonys=function(){
       $location.path('/Ponys/');
     }
-    /*YOUTH*/
+    /*YOUTH*
     $scope.gotoSpringY=function(){
      $location.path('/Varonil_Primavera/');
     }
     $scope.gotoAutumnY=function(){
       $location.path('/Varonil_Otoño/');
     }
-    /*FEMALE*/
+    /*FEMALE*
     $scope.gotoSpringF=function(){
       $location.path('/Femenil_Kid/');
     }
@@ -101,5 +190,4 @@
         .targetEvent(ev)
       );
     };
-  });
-})();
+  });*/
