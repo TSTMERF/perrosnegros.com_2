@@ -49,6 +49,10 @@
 			$location.path('/facilities/');
 			$window.scrollTo(0,0);
 		}
+		$scope.gotoProfile=function(){
+			$location.path('/profile/');
+			$window.scrollTo(0,0);
+		}
 		
 		/*GALLERY*/
  		// Set of Photos--------------------------------------------------------------------------------
@@ -96,11 +100,13 @@
  		$scope.formHide2=true;
  		$scope.formHide3=true;
  		$scope.formHide4=true;
+ 		$scope.formHide5=true;
 
  		$scope.formShow1=false;
  		$scope.formShow2=false;
  		$scope.formShow3=false;
  		$scope.formShow4=false;
+ 		$scope.formShow5=false;
 
  		$scope.showRegister=function(){
  			$scope.registerVisibility=true;
@@ -136,6 +142,14 @@
  			$scope.formShow3=false;
  			$scope.formShow4=true;
  			$scope.formHide4=false;
+ 			$scope.formShow5=false;
+ 			$scope.formHide5=true;
+ 		}
+ 		$scope.showForm5=function(){
+ 			$scope.formHide4=true;
+ 			$scope.formShow4=false;
+ 			$scope.formShow5=true;
+ 			$scope.formHide5=false;
  		}
  		//---------------------------------------------------------------------------------------------------
 
@@ -147,11 +161,13 @@
 	 		$scope.formHide2=true;
 	 		$scope.formHide3=true;
 	 		$scope.formHide4=true;
+	 		$scope.formHide5=true;
 
 	 		$scope.formShow1=true;
 	 		$scope.formShow2=false;
 	 		$scope.formShow3=false;
 	 		$scope.formShow4=false;
+	 		$scope.formShow5=false;
  			$scope.register.$setUntouched();
  		}
  		//---------------------------------------------------------------------------------------------
