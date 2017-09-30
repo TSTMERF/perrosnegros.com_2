@@ -1673,8 +1673,31 @@ body {
     overflow: hidden;
     width: 70%;
     height: 0;
-    transition: .5s ease;
+    transition: 1.2s ease;
 }
 .container-event:hover .textOverlay {
   height: 100%;
+}
+/****************/
+/*  CATEGORIAS   */
+/****************/
+
+.midContent img{
+    width:100%; 
+    height: 70%;
+    opacity:.7;
+}
+.sectCategory{
+    padding:80px;
+}
+.sidenavRight{padding-top:60px;}
+@media screen and (max-width: 1050px){ 
+    .sectCategory{padding:180px 10px 0 10px;}
+    .sidenavLeft{padding:150px 0 0 0;}
+    .sidenavRight{padding-top:150px;}
+}
+@media screen and (max-width: 500px){ 
+    .sectCategory{padding:80px 10px 0 10px;}
+    .sidenavLeft{padding:50px 0 0 0;}
+    .sidenavRight{padding-top:50px;}
 }
