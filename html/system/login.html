@@ -1,33 +1,36 @@
-<md-content layout="column" layout="column" flex layout-align-xl="center center" layout-align="start center" id="login">
+<md-content layout="column" layout="column" flex layout-align-xl="center center" layout-align="center center" id="login">
 	<md-card>
-		<md-toolbar class="md-hue-2">
-			<div class="md-toolbar-tools">
-				<h2>
-					<span>Inicio de sesión</span>
-				</h2>
- 			</div>
-		</md-toolbar>
+		<md-card-header  layout-align="center center">
+			<md-card-avatar>
+				<img src="images/perro1.png">
+			</md-card-avatar>
+			<md-card-header-text>
+				<span class="md-title" style="font-size:20px;">Perros Negros</span>
+			</md-card-header-text>
+		</md-card-header>
 		<md-card-content>
-			<img ng-src="images/cascoPN.jpg" class="md-card-image" alt="Washed Out" style="width:400px; height:400px;">
-			<form name="loginForm" layout-gt-md="row" novalidate="true">
-				<md-input-container flex >
-					<label>Usuario</label>
+			<form name="loginForm" layout-gt-md="column" novalidate="true" layout-align="center center">
+				<i class="material-icons md-card-image" style=" color:green; font-size:150px;">account_circle</i>			 
+				<md-input-container flex style="padding:0 50px 0 50px;">
+					<label style="opacity:.5;">Usuario:</label>
 					<input ng-model="login.user" name="user" type="text" ng-required="true"/>
 						<ng-messages for="loginForm.user.$error" ng-show="loginForm.user.$touched">
 						<ng-message when="required">Este campo es obligatorio</ng-message>
 					</ng-messages>
 				</md-input-container>
-				<md-input-container flex>
-					<label>Contraseña</label>
+				<md-input-container flex style="padding:0 50px 0 50px;">
+					<label style="opacity:.5; ">Contraseña:</label>
 					<input ng-model="login.password" name="password" type="password" ng-required="true"/>
 					<ng-messages for="loginForm.password.$error" ng-show="loginForm.password.$touched">
 						<ng-message when="required">Este campo es obligatorio</ng-message>
 					</ng-messages>
 				</md-input-container>
+				<br><br>
 				<div class="md-actions" ng-disabled="!loginForm.$valid" layout="column" layout-align="end center">
 					<md-button class="md-primary" ng-click="doLogin()">Entrar</md-button>
 				</div>
 			</form>
 		</md-card-content>
 	</md-card>
+	
 </md-content>

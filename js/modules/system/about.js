@@ -55,7 +55,7 @@
 
         function DialogController($scope, $mdDialog) {
         $scope.answer = function(answer) {
-            $mdDialog.hide(answer);
+            $mdDialog.hide(answer); 
         };
       } 
 	});
