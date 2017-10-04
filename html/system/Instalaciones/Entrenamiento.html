@@ -1,5 +1,4 @@
-<md-dialog  aria-label="Términos y Condiciones">
-  <form ng-cloak>
+<md-dialog  aria-label="Entrenamiento">
     <md-toolbar>
       <div class="md-toolbar-tools" style="background-color: black">
         <h2><span>Campo de juego</span></h2>
@@ -9,7 +8,7 @@
       </div>
     </md-toolbar>
     <md-dialog-content>
-      <div class="dialog-facility" onload="myFunction()">
+      <div class="dialog-facility">
          <div class="container">  
             <div class="row col-xs-12 col-sm-9 col-md-10 col-lg-7">
          <!--   <div id="loader"></div>-->
@@ -53,26 +52,24 @@
                       </div>
                       
                       <!-- Controls -->
-                      <a class="entre left carousel-control" href="#carousel-perros" data-slide="prev">
+                      <a class="entre left carousel-control" data-target="#carousel-perros" data-slide="prev">
                           <span class="glyphicon glyphicon-chevron-left"></span>
                       </a>
                       
-                      <a class="entre right carousel-control" href="#carousel-perros" data-slide="next">
+                      <a class="entre right carousel-control" data-target="#carousel-perros" data-slide="next">
                           <span class="glyphicon glyphicon-chevron-right"></span>
                       </a>
                   </div>
               </div>
           </div>
       </div>
-
     </md-dialog-content>
-    <md-dialog-actions layout="row" >
+  <md-dialog-actions layout="row" >
       <span flex></span>
       <md-button ng-click="answer('useful')" class="md-primary">
         CERRAR
       </md-button>
     </md-dialog-actions>
-  </form>
 </md-dialog>
 
 
