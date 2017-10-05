@@ -1695,3 +1695,9 @@ body {
     .sidenavLeft{padding:50px 0 0 0;}
     .sidenavRight{padding-top:50px;}
 }
+/****************/
+/*  MD-dialog   */
+/****************/
+body.layout-column.md-dialog-is-showing{
+    position:fixed; 
+}

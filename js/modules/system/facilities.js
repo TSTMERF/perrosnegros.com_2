@@ -17,8 +17,8 @@
        $scope.showEntre = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/Entrenamiento.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/Entrenamiento.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -44,8 +44,8 @@
        $scope.showPS = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/PastoS.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/PastoS.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -67,8 +67,8 @@
        $scope.showPN = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/PastoN.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/PastoN.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -90,8 +90,8 @@
        $scope.showTL = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/TribunaL.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/TribunaL.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -113,8 +113,8 @@
        $scope.showTV = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/TribunaV.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/TribunaV.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -136,8 +136,8 @@
        $scope.showPalcoS = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/PalcosS.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/PalcosS.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -159,8 +159,8 @@
        $scope.showBTL = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/BanosTL.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/BanosTL.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -182,8 +182,8 @@
        $scope.showVE = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/Vestidores.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/Vestidores.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -205,8 +205,8 @@
        $scope.showME = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/MarcadorE.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/MarcadorE.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -228,8 +228,8 @@
        $scope.showCA = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/Casilleros.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/Casilleros.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -251,8 +251,8 @@
        $scope.showAU = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/Auditorio.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/Auditorio.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -274,8 +274,8 @@
        $scope.showCF = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/Cafeteria.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/Cafeteria.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -298,8 +298,8 @@
        $scope.showBO = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/Boutique.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/Boutique.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -322,8 +322,8 @@
        $scope.showAA = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/AreaAdm.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/AreaAdm.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -345,8 +345,8 @@
        $scope.showFJ = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/EFYJ.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/EFYJ.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -368,8 +368,8 @@
        $scope.showCB = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/CanchaB.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/CanchaB.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -391,8 +391,8 @@
        $scope.showBV = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/BanosV.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/BanosV.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -416,8 +416,8 @@
       $scope.showSer = function(ev) {
         $mdDialog.show({
             controller: DialogController,
-            templateUrl:'html/system/EstamosTrabajando.html',
-            //templateUrl: 'html/system/Instalaciones/MedicalService.html',
+            //templateUrl:'html/system/EstamosTrabajando.html',
+            templateUrl: 'html/system/Instalaciones/MedicalService.html',
             parent: angular.element(document.body),
             targetEvent: ev,
             clickOutsideToClose:true
@@ -440,8 +440,8 @@
       	$scope.showGim = function(ev) {
     		$mdDialog.show({
       			controller: DialogController,
-      			templateUrl:'html/system/EstamosTrabajando.html',
-      			//templateUrl: 'html/system/Instalaciones/Gimnasio.html',
+      			//templateUrl:'html/system/EstamosTrabajando.html',
+      			templateUrl: 'html/system/Instalaciones/Gimnasio.html',
       			parent: angular.element(document.body),
       			targetEvent: ev,
       			clickOutsideToClose:true
@@ -464,8 +464,8 @@
    		$scope.showPal = function(ev) {
     		$mdDialog.show({
       			controller: DialogController,
-      			templateUrl:'html/system/EstamosTrabajando.html',
-      			//templateUrl: 'html/system/Instalaciones/Palcos.html',
+      			//templateUrl:'html/system/EstamosTrabajando.html',
+      			templateUrl: 'html/system/Instalaciones/Palcos.html',
       			parent: angular.element(document.body),
       			targetEvent: ev,
       			clickOutsideToClose:true
@@ -488,8 +488,8 @@
    		$scope.showBB = function(ev) {
     		$mdDialog.show({
       			controller: DialogController,
-      			templateUrl:'html/system/EstamosTrabajando.html',
-      			//templateUrl: 'html/system/Instalaciones/Buildings.html',
+      			//templateUrl:'html/system/EstamosTrabajando.html',
+      			templateUrl: 'html/system/Instalaciones/Buildings.html',
       			parent: angular.element(document.body),
       			targetEvent: ev,
       			clickOutsideToClose:true
